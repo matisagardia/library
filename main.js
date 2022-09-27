@@ -27,19 +27,19 @@ addToColection('Lord of the rings', 'Tolkien', '222', 'yes');
 
 // Function to display the form to add a book when clicking on the Add Book button
 
-function showForm() {
-    const formButton = document.getElementById('add');
-    formButton.addEventListener('click', (e) => {
-        const form = document.getElementById('bookForm');
-        if(form.style.display == 'none') {
-        form.style.display = 'flex'; 
-        } else {
-        form.style.display = 'none';
-    }
-    })
-}
+// function showForm() {
+//     const formButton = document.getElementById('add');
+//     formButton.addEventListener('click', (e) => {
+//         const form = document.getElementById('bookForm');
+//         if(form.style.display == 'none') {
+//         form.style.display = 'flex'; 
+//         } else {
+//         form.style.display = 'none';
+//     }
+//     })
+// }
 
-showForm();
+// showForm();
 
 // Function to display the books list on the container.
 // Used this function to add styles instead of the CSS.
@@ -90,5 +90,17 @@ myLibrary.forEach(element => {
         deleteButton.style.cursor = 'pointer';
 })
 }
+
+// Function to create a new book based on the user input
+
+const addButton = document.getElementById('inputButton');
+addButton.addEventListener('click', takeFormData);
+
+function takeFormData() {
+        let Name = document.getElementById('bookName').value;
+        let Author = document.getElementById('bookAuthor').value;
+        let Pages = document.getElementById('bookPages').value;
+    }
+
 
 displayBook();

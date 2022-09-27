@@ -149,7 +149,7 @@
   .bookForm {
     gap: 30px;
     color: white;
-    display: none;
+    display: flex;
     align-items: center;
   }
 
@@ -162,4 +162,5 @@
     border-width: 1px;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
   }
