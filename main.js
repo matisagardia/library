@@ -100,6 +100,7 @@ function takeFormData() {
         let Name = document.getElementById('bookName').value;
         let Author = document.getElementById('bookAuthor').value;
         let Pages = document.getElementById('bookPages').value;
+        addToColection(Name, Author, Pages, '123412');
     }
 
 
