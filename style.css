@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(30,13,65);
+    background: linear-gradient(180deg, rgb(36, 27, 54) 0%, rgba(33,33,33,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    height: 100vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.login {
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(165, 165, 165);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.description {
+    text-align: center;
+    color: rgb(189, 189, 189);
+    padding-top: 40px;
+    font-weight: 100;
+}
+
+.add {
+    width: 150px;
+    background-color: transparent;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(165, 165, 165);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bookContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer {
+    justify-items: flex-end;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .bookForm {
+    gap: 30px;
+    color: white;
+    display: none;
+    align-items: center;
+  }
+
+  #inputButton {
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    color: white;
+  }
